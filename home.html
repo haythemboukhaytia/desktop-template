@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Home Page</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/home.css">
+    <link rel="stylesheet" type="text/css" href="css/fontawesome/all.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+</head>
+
+<body>
+        <header>
+            <nav>
+                <img src="/images/logo.png" alt="logo-lidl" class="logo-lidl">
+                <a href="#" class="lidl-reisen">lidl-reisen.de</a>
+                <div class="row">
+                    <ul class="nav-main">
+                        <li><a href="#">Verantwortung</a></li>
+                        <li><a href="#">Unternehmen</a></li>
+                        <li><a href="#">Karriere</a></li>
+                        <li><a href="#">Service & Hilfe</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="row">
+                <input type="text" name="text" id="search-text" placeholder="Ziel, Hotel, Buchungscode, ...">
+                <a href="#"><i class="fas fa-search"></i></a>     
+                <a href="#">
+                    <ion-icon name="map-outline" id="prospekte"></ion-icon>
+                </a>
+                <label id="prospekte-2">Prospekte</label>
+                <a href="#">
+                    <ion-icon name="mail-outline" id="newsletter"></ion-icon>
+                </a>
+                <label id="newsletter-2">Newsletter</label>
+            </div>
+        </header>
+
+        <section class="section-1">
+            <div class="row">
+                <ul class="nav-main-2">
+                    <li><a href="#">Angebote</a></li>
+                    <li><a href="#">Onlineshop</a></li>
+                    <li><a href="#" id="reisen">Reisen</a></li>
+                    <li><a href="#">Wein</a></li>
+                    <li><a href="#">Fotos</a></li>
+                    <li><a href="#">Blumen</a></li>
+                    <li><a href="#">Rezepte</a></li>
+                    <li><a href="#">Connect</a></li>
+                    <li><a href="#">Partneraktionen</a></li>
+                    <li><a href="#">Testergebnisse</a></li>
+                    <li><a href="#">Karriere</a></li>
+                </ul>
+            </div>
+            <div class="row">
+                <ul class="nav-main-3">
+                    <li><a href="#" id="Reiseprospekte">Aktuelle Reiseprospekte</a>&nbsp;&nbsp;<ion-icon
+                            name="chevron-up-outline"></ion-icon>
+                    </li>
+                    <li><a href="#">Beliebte Reiseziele</a>&nbsp;&nbsp;<ion-icon name="chevron-down-outline"></ion-icon>
+                    </li>
+                    <li><a href="#">Reisearten</a>&nbsp;&nbsp;<ion-icon name="chevron-down-outline"></ion-icon>
+                    </li>
+                    <li><a href="#">Online Highlights</a>&nbsp;&nbsp;<ion-icon name="chevron-down-outline"></ion-icon>
+                    </li>
+                    <li><a href="#">Last Minute</a>&nbsp;&nbsp;<ion-icon name="chevron-down-outline"></ion-icon>
+                    </li>
+                    <li><a href="#">Partnerangebote</a>&nbsp;&nbsp;<ion-icon name="chevron-down-outline"></ion-icon>
+                    </li>
+                </ul>
+            </div>
+            <div class="row">
+                <ul class="nav-main-4">
+                    <li><a href="#">
+                            <ion-icon name="home-outline"></ion-icon>
+                        </a></li>
+                    <li>
+                        <ion-icon name="chevron-forward-outline"></ion-icon>&nbsp;&nbsp;<a href="#">Level 1</a>
+                    </li>
+                    <li>
+                        <ion-icon name="chevron-forward-outline"></ion-icon>&nbsp;&nbsp;<a href="#">Level 2</a>
+                    </li>
+                    <li>
+                        <ion-icon name="chevron-forward-outline"></ion-icon>&nbsp;&nbsp;<a href="#">Level 3</a>
+                    </li>
+                    <li>
+                        <ion-icon name="chevron-forward-outline"></ion-icon>&nbsp;&nbsp;<a href="#">Level 4</a>
+                    </li>
+                    <li>
+                        <ion-icon name="chevron-forward-outline"></ion-icon>&nbsp;&nbsp;<a href="#" id="level">Level
+                            5</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section2"></section>
+
+        <section class="section3">
+            <div class="row">
+                <label for="reiseart">Reiseart</label>
+                <label for="reisende">Reisende</label>
+                <label for="reiseziel">Reiseziel</label>
+                <label for="zeitraum">Zeitraum & Dauer</label>
+            </div>
+            <div class="row">
+                <input type="text" name="reiseart" id="reiseart" placeholder="Bitte auswählen">
+                <ion-icon name="chevron-down-outline" class="chev-1"></ion-icon>
+                <input type="text" name="reisende" id="reisende" placeholder="2 Erwachsene">
+                <ion-icon name="chevron-down-outline" class="chev-1"></ion-icon>
+                <input type="text" name="reisziel" id="reisziel" placeholder="Land, Region, Ort, Hotel">
+                <ion-icon name="chevron-down-outline" class="chev-1"></ion-icon>
+                <input type="text" name="zeitraum" id="zeitraum" placeholder="Bitte auswählen">
+                <ion-icon name="chevron-down-outline" class="chev-1"></ion-icon>
+                <button type="button" class="btn">MEINE REISE FINDEN</button>
+            </div>
+            <div class="row">
+                <div class="filter">
+                    <a href="#">Weitere Filter</a>
+                    <ion-icon name="chevron-down-outline" id="chev-down"></ion-icon>
+                </div>
+            </div>
+        </section>
+        <section class="section4">
+            <div class="row">
+                <p>
+                    1. Absatz des SEO-Text: Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo<br>
+                    consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna<br>
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                    commodo consequat.
+                </p>
+            </div>
+        </section>
+
+        <section class="section5">
+            <div class="row">
+                <h2>LOREM IPSUM PRODUKTTEASER</h2>
+            </div>
+            <div class="row" id="div1"></div>
+        </section>
+
+        <section class="section6">
+            <div class="row" id="title">
+                <h2>LOREM IPSUM KATEGORIETEASER</h2>
+            </div>
+            <div id="box">
+                <button type="button" class="button1">&#x3c;</button>
+                <button type="button" class="button2">&#x3e;</button>
+            </div>
+
+            <section class="section7">
+                <div class="row">
+                    <h2>LOREM IPSUM WEITERE TEASER</h2>
+                </div>
+                <div class="row" id="div2"></div>
+            </section>
+            <section></section>
+            <section></section>
+            <section class="section8">
+                <div class="row">
+                    <p>NOCH MEHR SEO-TEXT</p>
+                    <p>
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat. Lorem ipsum dolor sit<br>
+                        amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                        aliqua. Ut enim ad minim veniam,<br>
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                </div>
+            </section>
+    <script src="home.js" type="text/javascript"></script>
+</body>
+</html>

@@ -1,0 +1,342 @@
+
+/* -----------------------------Grid Layout---------------------------------------------------- */
+
+@media (min-width: 1264px) {
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        background-color: #FAFAFA;
+        font-family: 'News-Gothic-BT-reg','Trebuchet MS',Arial;
+        font-size: 16px; 
+        font-weight: 400;
+       
+    }
+
+li {
+    font-size: 1rem;
+    list-style: none;
+    display: inline-block;
+}
+
+p {
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #353b42;
+}
+
+
+section {
+    padding: 150px 0;    
+}
+
+h2{
+    font-size: 2rem;
+    font-weight: 600;
+    color:#353b42;
+    text-align: center;
+    position: relative;
+    }
+    h2::before,
+    h2::after {
+        display: inline-block;
+        content: "";
+        border-top: .1rem solid #979899;
+        width: 25rem;
+        margin: 0 1rem;
+        transform: translateY(-1rem);
+    }
+
+.row {
+   width: 100%;
+   margin: 0 auto;
+}
+
+
+
+/* -------------------------------------Header----------------------------------------- */
+
+header {
+    height: 7vh;
+    background-color: #888c8f;
+}
+
+.nav-main {
+    float: right;
+    margin-top:30px;
+    margin-right: 50px;
+}
+.nav-main li {
+    margin-left: 50px;
+    
+}
+.nav-main li a:link,
+.nav-main li a:visited {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.lidl-reisen {
+    float: left;
+    list-style: none;
+    margin-top: 30px;
+    margin-left: 150px;
+    font-size: 1rem; 
+}
+
+.lidl-reisen:link,
+.lidl-reisen:visited {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.logo-lidl {
+max-height: 150px;
+max-width: 150px;
+float: left;
+margin-left:100px;
+margin-top: 50px;
+}
+#search-text {
+    margin-top: 110px;
+    margin-left: -200px;
+    width:450px;
+    padding:20px;
+    border: 1px solid gray;
+}
+::placeholder {
+    font-size: 16px;
+    color: gray;
+    font-weight: 500;
+  }
+
+ .fas{
+    padding:20px;
+    position: relative;
+    margin-left: -59px;
+    height: 55px;
+    width: 54px;
+    background-color: #06507f;
+    cursor: pointer; 
+    color: white;
+}
+.search {
+    color: white !important;
+  }
+#prospekte{
+    float:right;
+    margin-top: 100px;
+    margin-right: -200px;
+    width:60px;
+    height:60px;
+    border: none;
+    cursor: pointer; 
+}
+#prospekte-2 {
+    float: right;
+    margin-top: 170px;
+    margin-right: -210px;
+    color: #2f3a44;
+    font-weight: 100;
+}
+
+#newsletter{
+    float:right;
+    margin-top: 100px;
+    margin-right: -300px;
+    width:60px;
+    height:60px;
+    border: none;
+    cursor: pointer; 
+}
+
+#newsletter-2 {
+    float: right;
+    margin-top: 170px;
+    margin-right: -310px;
+    color: #2f3a44;
+}
+
+/*---------------------------------section-1-----------------------------------------*/
+
+.nav-main-2 li {
+    margin-left: 100px;
+    font-size: 1.5rem;
+}
+.nav-main-2 li a:link,
+.nav-main-2 li a:visited {
+    color: #2f3a44;
+    text-decoration: none;
+}
+#reisen, #Reiseprospekte {
+    color:#06507f;
+    font-weight: 900;
+    text-decoration: underline;
+}
+
+.nav-main-2 {
+    border-bottom: 5px solid rgb(231, 227, 227);
+     height: 100px;  
+}
+
+.nav-main-3 {
+    margin-top: 50px;
+}
+
+.nav-main-3 li {
+    margin-left: 100px;
+    font-size: 1rem;
+    
+}
+.nav-main-4 li a {
+ color: black;
+ font-weight: bold;
+}
+.nav-main-3 li a:link,
+.nav-main-3 li a:visited {
+    color: #2f3a44;
+    text-decoration: none;
+}
+
+.nav-main-4 {
+    margin-top: 50px;
+    margin-left: 110px;
+}
+
+.nav-main-4 li {
+    margin-left: 50px;
+    font-size: 1rem;
+    
+}
+.nav-main-4 li a:link,
+.nav-main-4 li a:visited {
+    color: #2f3a44;
+    text-decoration: none;
+}
+
+#level  {
+    color:#06507f;
+    font-weight: 900;
+}
+
+/*---------------------------------section-2-----------------------------------------*/
+.section2{
+background-image: url("../images/lastMinute.PNG");
+background-repeat: no-repeat;
+background-size: cover;
+height: 80vh;
+margin-top: -95px;
+}
+
+/*---------------------------------section-3-----------------------------------------*/
+
+.section3{
+background-color: #2f3a44;
+text-align: center;
+    }
+label {
+display: inline-block;
+ margin-left: 135px;
+ margin-right: 190px;
+ margin-bottom: 30px;
+ color:#ffffff;
+ font-weight: 700;;
+     }
+
+input {
+display: inline-block;
+padding: 30px;
+width:300px;
+margin-left: 100px;   
+     }
+
+.chev-1 {
+    height: 25px;
+    margin-left: -40px;
+    width:30px;
+    margin-bottom: -10px;
+}
+.btn {
+    height: 82px;
+    width:200px;
+    padding: 10px;
+    margin-left: 40px;
+    color:#fff;
+    background-color: #0076bf;
+    cursor: pointer;
+    border: none;
+}
+.filter a{
+    float: right;
+    color: rgb(247, 240, 240);
+    margin-right: 80px;
+    margin-top: 30px;
+}
+
+#chev-down {
+    float: right;
+    margin-right: -140px;
+    margin-top: 30px;
+    height:25px;
+    width:30px;
+}
+#reisende::placeholder {
+    color: #0076bf;
+    font-weight: 600;
+}
+/*---------------------------------section-4-----------------------------------------*/
+
+.section4{
+    text-align: center;
+}
+
+
+
+/*---------------------------------section-5-----------------------------------------*/
+.section5{
+    text-align: center;
+    padding: 100px;
+}
+
+/*---------------------------------section-6-----------------------------------------*/
+
+.section6{
+    padding: 100px;
+    margin-top: 100px;
+    margin-bottom: 200px;
+}
+.button1 {
+    position: relative;
+    margin-top: 200px;
+    right: 96%;
+    padding: 10px;
+    cursor: pointer;
+}
+.button2 {
+    padding: 10px;
+    cursor: pointer;
+    position: relative;
+    right: 2%;
+}
+
+
+
+/*---------------------------------section-7-----------------------------------------*/
+.section7{
+    padding: 100px;
+    margin-bottom: 200px;
+    margin-top: 350px;
+}
+/*---------------------------------section-8-----------------------------------------*/
+
+.section8{
+    padding: 100px;
+    text-align: center;
+    margin-top: 600px;
+}
+}
