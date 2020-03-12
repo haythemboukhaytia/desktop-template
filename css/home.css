@@ -1,7 +1,5 @@
 
-/* -----------------------------Grid Layout---------------------------------------------------- */
-
-@media (min-width: 1264px) {
+/* -----------------------------Basic Setup---------------------------------------------------- */
 
     * {
         margin: 0;
@@ -9,31 +7,29 @@
         box-sizing: border-box;
     }
     
-    body {
+    html {
         background-color: #FAFAFA;
         font-family: 'News-Gothic-BT-reg','Trebuchet MS',Arial;
         font-size: 16px; 
         font-weight: 400;
-       
+    }
+    .row {
+        max-width: 1280px;
+        margin: 0 auto;
     }
 
-li {
-    font-size: 1rem;
-    list-style: none;
-    display: inline-block;
-}
+    li {
+        font-size: 1rem;
+        list-style: none;
+        display: inline-block;
+    }
 
-p {
-    font-size: 1.5rem;
-    font-weight: 400;
-    line-height: 1.6;
-    color: #353b42;
-}
-
-
-section {
-    padding: 150px 0;    
-}
+    p {
+        font-size: 1rem;
+        line-height: 1.6;
+        color: #353b42;
+        font-weight: bold;
+    }
 
 h2{
     font-size: 2rem;
@@ -41,21 +37,17 @@ h2{
     color:#353b42;
     text-align: center;
     position: relative;
+    margin-bottom: 5%;
     }
     h2::before,
     h2::after {
         display: inline-block;
         content: "";
-        border-top: .1rem solid #979899;
-        width: 25rem;
+        border-bottom: .2rem solid #979899;
+        width: 20rem;
         margin: 0 1rem;
         transform: translateY(-1rem);
     }
-
-.row {
-   width: 100%;
-   margin: 0 auto;
-}
 
 
 
@@ -67,13 +59,12 @@ header {
 }
 
 .nav-main {
-    float: right;
-    margin-top:30px;
-    margin-right: 50px;
+    position: absolute;
+    right: 20%;
+    top: 2%;
 }
 .nav-main li {
-    margin-left: 50px;
-    
+    margin-left: 25px;
 }
 .nav-main li a:link,
 .nav-main li a:visited {
@@ -82,10 +73,9 @@ header {
 }
 
 .lidl-reisen {
-    float: left;
-    list-style: none;
-    margin-top: 30px;
-    margin-left: 150px;
+    position: absolute;
+    top: 2%;
+    left:17%;
     font-size: 1rem; 
 }
 
@@ -96,74 +86,84 @@ header {
 }
 
 .logo-lidl {
-max-height: 150px;
-max-width: 150px;
+height: 150px;
+width: auto;
 float: left;
-margin-left:100px;
-margin-top: 50px;
+margin-left:110px;
+margin-top: 40px;
 }
+
+/* -------------------------------------Section1----------------------------------------- */
+.section1 {
+    margin-bottom: 5rem;
+}
+
 #search-text {
-    margin-top: 110px;
-    margin-left: -200px;
-    width:450px;
     padding:20px;
+    margin-top: 30px;
+    margin-left: 10px;
+    height: 60px;
+    width: 30%;
     border: 1px solid gray;
 }
 ::placeholder {
-    font-size: 16px;
+    font-size: 1rem;
     color: gray;
     font-weight: 500;
   }
 
  .fas{
     padding:20px;
-    position: relative;
-    margin-left: -59px;
-    height: 55px;
-    width: 54px;
+    position: absolute;
+    margin-top: 30px;
+    height: 58px;
+    width: auto;
     background-color: #06507f;
     cursor: pointer; 
     color: white;
 }
-.search {
-    color: white !important;
-  }
+
 #prospekte{
-    float:right;
-    margin-top: 100px;
-    margin-right: -200px;
-    width:60px;
-    height:60px;
+    top:13%;
+    right:20%;
+    position:absolute;
+    width:40px;
+    height:40px;
     border: none;
     cursor: pointer; 
 }
 #prospekte-2 {
-    float: right;
-    margin-top: 170px;
-    margin-right: -210px;
+    top:21%;
+    right:19%;
+    position:absolute;
     color: #2f3a44;
     font-weight: 100;
+    font-size: 0.8rem;
 }
 
 #newsletter{
-    float:right;
-    margin-top: 100px;
-    margin-right: -300px;
-    width:60px;
-    height:60px;
+    top:13%;
+    right:15%;
+    position:absolute;
+    width:40px;
+    height:40px;
     border: none;
     cursor: pointer; 
 }
 
 #newsletter-2 {
-    float: right;
-    margin-top: 170px;
-    margin-right: -310px;
+    top:21%;
+    right:13%;
+    position:absolute;
     color: #2f3a44;
+    font-size: 0.8rem;
 }
 
-/*---------------------------------section-1-----------------------------------------*/
+/*---------------------------------section-2-----------------------------------------*/
 
+.section2 {
+    margin-bottom: 5rem;
+}
 .nav-main-2 li {
     margin-left: 100px;
     font-size: 1.5rem;
@@ -190,8 +190,7 @@ margin-top: 50px;
 
 .nav-main-3 li {
     margin-left: 100px;
-    font-size: 1rem;
-    
+    font-size: 1rem;   
 }
 .nav-main-4 li a {
  color: black;
@@ -224,36 +223,30 @@ margin-top: 50px;
     font-weight: 900;
 }
 
-/*---------------------------------section-2-----------------------------------------*/
-.section2{
+/*---------------------------------section-3-----------------------------------------*/
+.section3{
 background-image: url("../images/lastMinute.PNG");
 background-repeat: no-repeat;
 background-size: cover;
-height: 80vh;
-margin-top: -95px;
+height: 75vh;
 }
 
-/*---------------------------------section-3-----------------------------------------*/
+/*---------------------------------section-4-----------------------------------------*/
 
-.section3{
+.section4{
 background-color: #2f3a44;
-text-align: center;
+padding:50px;
     }
-label {
-display: inline-block;
- margin-left: 135px;
- margin-right: 190px;
- margin-bottom: 30px;
+ .span-1-of-5 label {
  color:#ffffff;
- font-weight: 700;;
+ font-weight: 600;
+ font-size: 1.3rem;
      }
 
-input {
-display: inline-block;
-padding: 30px;
-width:300px;
-margin-left: 100px;   
-     }
+.span-1-of-5 input, .btn {
+  padding: 20px;
+  width:100%;
+     } 
 
 .chev-1 {
     height: 25px;
@@ -262,26 +255,24 @@ margin-left: 100px;
     margin-bottom: -10px;
 }
 .btn {
-    height: 82px;
-    width:200px;
-    padding: 10px;
-    margin-left: 40px;
     color:#fff;
     background-color: #0076bf;
     cursor: pointer;
     border: none;
+    font-weight: 700;
+}
+.filter {
+    position:absolute;
+    right: 4%;
+    margin-top: 10px;
 }
 .filter a{
-    float: right;
     color: rgb(247, 240, 240);
-    margin-right: 80px;
-    margin-top: 30px;
+   
 }
 
 #chev-down {
-    float: right;
-    margin-right: -140px;
-    margin-top: 30px;
+   position: absolute;
     height:25px;
     width:30px;
 }
@@ -289,54 +280,126 @@ margin-left: 100px;
     color: #0076bf;
     font-weight: 600;
 }
-/*---------------------------------section-4-----------------------------------------*/
-
-.section4{
-    text-align: center;
-}
-
-
-
 /*---------------------------------section-5-----------------------------------------*/
+
 .section5{
     text-align: center;
-    padding: 100px;
+    padding:100px;
 }
 
 /*---------------------------------section-6-----------------------------------------*/
-
 .section6{
     padding: 100px;
-    margin-top: 100px;
-    margin-bottom: 200px;
 }
-.button1 {
-    position: relative;
-    margin-top: 200px;
-    right: 96%;
-    padding: 10px;
-    cursor: pointer;
+.firstdiv {
+    display: table-cell;
 }
-.button2 {
-    padding: 10px;
-    cursor: pointer;
-    position: relative;
-    right: 2%;
+.linksel{
+color : grey;
+background-color : #0050aa;
+padding : 10px;
+font-size: 2rem;
+margin-right: 10px;
+text-decoration: underline;
 }
 
-
-
+.lorem {
+    font-size: 1.8rem;
+    color: grey;
+}
+.lorem2 {
+    font-size: 1rem;
+    color:black;
+}
+span {
+    border:2px solid grey;
+    padding: 15px;
+    color: black;
+    font-size: 2rem;
+    font-weight: bold;
+    float:right;
+}
+.lorem3 {
+   margin-left: 220px;
+   margin-right: 100px;
+   font-size: 0.7rem;
+}
 /*---------------------------------section-7-----------------------------------------*/
+
 .section7{
     padding: 100px;
-    margin-bottom: 200px;
-    margin-top: 350px;
 }
-/*---------------------------------section-8-----------------------------------------*/
+.seconddiv {
+    display: table-cell;
+}
+.imgProdukt {
+    height: 500px;
+}
+.ptext {
+    margin-left: 5%;
+}
+.dv{
+    background-color: #ACB0B4;
+    height: 3rem;
+    margin-right: 1rem;
+    margin-left: 0.5rem;
 
+}
+ .button1 {
+    position:absolute;
+    cursor: pointer;
+    margin-top: 250px;
+    left: 15%;
+    padding: 10px;
+
+}
+
+.button2 {
+    position:absolute;
+    cursor: pointer;
+    margin-top: 250px;
+    left:80%;
+    padding: 10px;
+}
+
+
+
+/*---------------------------------section-8-----------------------------------------*/
 .section8{
     padding: 100px;
-    text-align: center;
-    margin-top: 600px;
 }
+
+.thirddiv {
+    float: left;
+    width:33%;
 }
+.teaser{
+    height:20rem;
+    width: 100%;
+}
+
+.lorem4 {
+    text-align: left;
+    background-color: #ffffff;
+    margin-left: 0.6rem;
+    margin-right: 0.2rem;
+    width:auto;
+    height: 6rem;
+    padding: 2rem;
+}
+
+.dv2{
+    background-color: #ACB0B4;
+    margin-left: 0.6rem;
+    margin-right: 0.2rem;
+    width:auto;
+    height: 3rem;
+}
+/*---------------------------------section-9-----------------------------------------*/
+
+.section9{
+    text-align:center;
+    padding:100px;
+}
+
+

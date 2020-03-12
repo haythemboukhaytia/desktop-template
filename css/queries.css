@@ -1,0 +1,184 @@
+@media only screen and (min-width: 1280px) {
+    body {
+        overflow-x: hidden;
+    }
+ 
+   .logo-lidl {
+    height: 100px;
+    width: auto;
+    float: left;
+    margin-left:70px;
+    margin-top: 20px;
+    }
+    #search-text {
+        padding:20px;
+        height: auto;
+        width: 25%;
+        border: 1px solid gray;
+    }
+    /*-------------section-2--------------*/
+    .nav-main-2 li {
+        margin-left: 50px;
+        font-size: 1.3rem;
+    }
+    .nav-main-3 li {
+        margin-left: 30px;
+        font-size: 1rem;   
+    }
+    .nav-main-4 {
+        margin-left: 10px;
+    }
+    /*------------section-3-----------------*/
+    .section3{
+        height: 100vh;
+        }
+    /*------------section-5-----------------*/
+       h2 {
+        font-size: 1.5rem;
+         margin-bottom: 10%;
+       }
+        h2::before,
+        h2::after { width: 12rem; }
+              
+  /*---------------section-6------------------*/
+
+        .lorem {
+            font-size: 1.3rem;
+        }
+        .lorem2 {
+            font-size: 0.8rem;
+            color:black;
+        }
+     
+ /*---------------section-7------------------*/
+    .section7 {
+        margin:88px 88px;
+    }
+   .imgProdukt {
+    height: 350px;
+          }
+          .button1 {
+            margin-top: 175px;
+            left: 10%;
+            }
+        
+        .button2 {
+            margin-top: 175px;
+            left:84%;
+        }
+
+
+}
+
+
+@media only screen and (max-width: 960px) {
+
+}
+
+
+@media only screen and (max-width: 600px) {
+
+}
+
+
+@media only screen and (max-width: 520px) {
+    .col {
+        margin:0px;
+    }
+    header {
+        height: 2vh;
+        background-color:#FAFAFA;
+    }
+   .lidl-reisen, .nav-main, #search-text,
+   #prospekte-2, #prospekte, #newsletter-2,#newsletter,
+    .nav-main-2, .nav-main-3, .nav-main-4 {
+     display: none;
+ }
+ #isearch{display: none;}
+.logo-lidl {
+    margin-top: 15px;
+    height: 100px;
+    margin-left:10px;
+    }
+
+/*---------------section-3------------------*/
+.section3{
+    height:90vh;
+    margin-top: -50px;
+    }
+/*---------------section-4------------------*/
+.section4{
+    background-color: #FAFAFA;
+    padding:50px;
+        }
+.span-1-of-5 label,
+.span-1-of-5 input,
+.chev-1, .filter {
+display: none;
+}
+.btn {
+   width: 320px;
+   margin-left: 50px;
+   margin-right: 50px;
+}
+/*-------------------section-5---------------*/
+
+.section5{
+    padding:50px;
+}
+/*------------section-6---------------------*/
+h2 {
+    font-size: 1.5rem;
+   }
+    h2::before,
+    h2::after { width: 0rem; }
+/*---------------------------------section-6-----------------------------------------*/
+.section6{
+    padding: 50px;
+}
+.firstdiv {
+    float: left;
+    background-color: #ffffff;
+    margin-bottom: 50px;
+}
+.linksel{
+    font-size: 1.2rem;
+    }
+/*---------------------------------section-7-----------------------------------------*/
+
+.section7{
+    padding: 50px;
+    margin: 0px 55px;
+}
+.seconddiv {
+    float: left;
+    margin-bottom: 20px;
+}
+.imgProdukt {
+    height:320px;
+}
+.ptext {
+    height:4rem;
+}
+.dv{
+    background-color: #ACB0B4;
+    height: 3rem;
+    margin-right: 0rem;
+    margin-left: 0.5rem;
+}
+
+.button1, .button2 {
+    display: none;
+}
+ /*---------------------------------section-8-----------------------------------------*/
+.section8{
+    padding: 50px;
+}
+
+.thirddiv {
+    width:100%;
+    margin-bottom: 20px;
+}
+
+
+}
